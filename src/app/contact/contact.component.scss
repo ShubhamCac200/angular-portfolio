@@ -1,199 +1,105 @@
 .contact {
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+  max-width: 750px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.8s ease;
+
+  .contact-title {
+    font-size: 2.2rem;
+    color: #3f51b5;
+    font-weight: 700;
     text-align: center;
-  
-    h2 {
-      font-size: 2rem;
-      color: #3f51b5;
-      margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #3f51b5;
+      margin: 0.5rem auto;
+      border-radius: 2px;
     }
-  
-    .subtitle {
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2.2rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .form-field {
+      width: 100%;
+    }
+
+    input, textarea {
       font-size: 1rem;
-      color: #555;
-      margin-bottom: 2rem;
+      color: #2c2c2c;
     }
-  
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      margin-bottom: 2rem;
-  
-      .form-field {
-        width: 100%;
+
+    button {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      background-color: #3f51b5;
+
+      &:hover {
+        background-color: #303f9f;
       }
-  
-      button {
-        align-self: center;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.6rem 1.5rem;
-        font-weight: bold;
-      }
-    }
-  
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-  
-      a {
-        text-decoration: none;
-        color: #3f51b5;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        transition: color 0.3s ease;
-  
-        &:hover {
-          color: #1a237e;
-        }
-  
-        mat-icon {
-          font-size: 20px;
-        }
+
+      mat-icon {
+        font-size: 18px;
       }
     }
   }
-  .contact {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-  
-    h2 {
-      text-align: center;
+
+  .social-links {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    a {
+      text-decoration: none;
       color: #3f51b5;
-      margin-bottom: 0.5rem;
-    }
-  
-    .subtitle {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1rem;
-      color: #444;
-    }
-  
-    .contact-form {
+      font-weight: 500;
       display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-  
-      .form-field {
-        width: 100%;
-  
-        input, textarea {
-          color: #212121 !important;
-        }
-  
-        ::ng-deep .mat-form-field-outline {
-          color: #3f51b5;
-        }
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #1a237e;
+        transform: translateY(-2px);
       }
-  
-      button {
-        align-self: flex-start;
-      }
-    }
-  
-    .social-links {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      text-align: center;
-  
-      a {
-        text-decoration: none;
-        color: #3f51b5;
-        font-weight: 500;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: color 0.3s ease;
-  
-        &:hover {
-          color: #1a237e;
-        }
-  
-        mat-icon {
-          font-size: 20px;
-        }
+
+      mat-icon {
+        font-size: 20px;
       }
     }
   }
-  .contact {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-  
-    h2 {
-      text-align: center;
-      color: #3f51b5;
-      margin-bottom: 0.5rem;
-    }
-  
-    .subtitle {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1rem;
-      color: #444;
-    }
-  
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-  
-      .form-field {
-        width: 100%;
-  
-        input, textarea {
-          color: #212121 !important;
-        }
-  
-        ::ng-deep .mat-form-field-outline {
-          color: #3f51b5;
-        }
-      }
-  
-      button {
-        align-self: flex-start;
-      }
-    }
-  
-    .social-links {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      text-align: center;
-  
-      a {
-        text-decoration: none;
-        color: #3f51b5;
-        font-weight: 500;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: color 0.3s ease;
-  
-        &:hover {
-          color: #1a237e;
-        }
-  
-        mat-icon {
-          font-size: 20px;
-        }
-      }
-    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,51 +1,82 @@
 .about {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    text-align: left;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #3f51b5;
-  }
-  
-  .intro {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-  
-    .highlight {
-      font-weight: 600;
-      color: #2c387e;
-    }
-  }
-  
-  .info-block {
-    margin-bottom: 1.5rem;
-  }
-  
-  h3 {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  .list {
-    list-style: disc;
-    padding-left: 1.5rem;
-  
-    li {
-      margin-bottom: 0.5rem;
-    }
-  }
-  
-  .resume-btn {
-    margin-top: 1.5rem;
-    font-weight: 600;
-    padding: 0.6rem 1.5rem;
-  }
-  
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(to bottom right, #f8f9ff, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #3f51b5;
+  margin-bottom: 1.2rem;
+  border-bottom: 3px solid #3f51b5;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #2c387e;
+}
+
+.info-block {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 0.6rem;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: #555;
+}
+
+.list li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #3f51b5;
+}
+
+.resume-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #303f9f;
+}

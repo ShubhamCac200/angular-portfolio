@@ -1,32 +1,32 @@
 <section class="contact">
-  <h2>Contact Me</h2>
+  <h2 class="contact-title">📬 Contact Me</h2>
   <p class="subtitle">
-    If you'd like to work together or have a question, feel free to reach out!
+    Have a project in mind or just want to say hello? Let’s connect!
   </p>
 
   <form class="contact-form" (submit)="sendEmail()">
     <mat-form-field appearance="outline" class="form-field">
-      <mat-label>Name</mat-label>
+      <mat-label>Your Name</mat-label>
       <input matInput type="text" name="name" [(ngModel)]="name" required />
     </mat-form-field>
 
     <mat-form-field appearance="outline" class="form-field">
-      <mat-label>Email</mat-label>
+      <mat-label>Email Address</mat-label>
       <input matInput type="email" name="email" [(ngModel)]="email" required />
     </mat-form-field>
 
     <mat-form-field appearance="outline" class="form-field">
       <mat-label>Message</mat-label>
-      <textarea matInput name="message" rows="5" [(ngModel)]="message" required></textarea>
+      <textarea matInput rows="6" name="message" [(ngModel)]="message" required></textarea>
     </mat-form-field>
 
     <button mat-raised-button color="primary" type="submit">
       <mat-icon>send</mat-icon>
-      Send
+      Send Message
     </button>
   </form>
 
-  <p class="subtitle">Or connect with me:</p>
+  <p class="subtitle">Or find me here:</p>
   <div class="social-links">
     <a href="https://in.linkedin.com/in/shubham-goswami-6a0542191" target="_blank">
       <mat-icon>linkedin</mat-icon> LinkedIn
