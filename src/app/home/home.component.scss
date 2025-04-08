@@ -1,0 +1,44 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  
+    .name {
+      color: #3f51b5;
+    }
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #424242;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    color: #616161;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  

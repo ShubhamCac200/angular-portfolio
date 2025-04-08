@@ -1,0 +1,53 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .nav-links a {
+    margin-right: 1rem;
+    color: white;
+
+    &.active-link {
+      font-weight: bold;
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .hide-mobile {
+    display: flex;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+}
+
+.sidenav-container {
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  z-index: 999;
+}
+
+.mobile-nav {
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .hide-desktop {
+    display: inline-block !important;
+  }
+}
